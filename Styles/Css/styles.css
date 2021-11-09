@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+.card {
+  display: flex;
+  height: 50vh;
+  width: 70vw;
+  background-color: #1b1938;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1rem; }
+  @media (max-width: 639px) {
+    .card {
+      display: flex;
+      height: 80vh;
+      flex-direction: column-reverse; } }
+  .card__text {
+    width: 50%;
+    padding: 6rem;
+    display: flex;
+    flex-direction: column; }
+    @media (max-width: 639px) {
+      .card__text {
+        width: 100%;
+        padding: 4rem;
+        text-align: center; } }
+    @media (max-width: 767px) {
+      .card__text {
+        width: 100%;
+        padding: 4rem;
+        text-align: center; } }
+    .card__text-title {
+      color: white;
+      font-family: "Inter", sans-serif;
+      font-weight: 700;
+      font-size: 3.5rem; }
+      .card__text-title span {
+        color: #aa5cdb; }
+    .card__text-description {
+      margin-top: 2.5rem;
+      color: rgba(255, 255, 255, 0.75);
+      font-family: 'Lexend Deca', sans-serif;
+      font-size: 2rem;
+      flex: 1; }
+    .card__text-companies {
+      display: grid;
+      width: 90%;
+      grid-template-columns: repeat(3, 1fr); }
+      @media (max-width: 639px) {
+        .card__text-companies {
+          grid-template-rows: repeat(3, 1fr);
+          grid-template-columns: 1fr;
+          margin-top: 6rem;
+          grid-row-gap: 4rem; } }
+      .card__text-companies p {
+        color: white;
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 2.8rem; }
+      .card__text-companies span {
+        color: rgba(255, 255, 255, 0.6);
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 1.5rem; }
+  .card__image {
+    width: 50%;
+    background: linear-gradient(rgba(170, 92, 219, 0.6), rgba(170, 92, 219, 0.6)), url("/images/image-header-desktop.jpg") no-repeat;
+    background-size: cover;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    filter: contrast(1.3); }
+    @media (max-width: 639px) {
+      .card__image {
+        height: 50%;
+        width: 100%;
+        border-top-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+        border-bottom-right-radius: 0; } }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  background-color: #090b1a; }
+  @media (max-width: 1023px) {
+    html {
+      font-size: 50%; } }
+
+body {
+  box-sizing: border-box; }
+
+main {
+  height: 100vh;
+  width: 100vw; }
+
+.attribution {
+  position: absolute;
+  top: 93%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 2.2rem; }
+  @media (max-width: 639px) {
+    .attribution {
+      font-size: 1.8rem; } }
+  .attribution a {
+    text-decoration: none;
+    color: #aa5cdb; }

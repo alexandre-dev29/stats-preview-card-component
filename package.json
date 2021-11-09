@@ -1,0 +1,12 @@
+{
+  "name": "stats-preview-card-component-main",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "watch-sass": "node-sass ./Styles/Scss/Style.scss ./Styles/css/styles.css -w"
+  },
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

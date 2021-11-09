@@ -1,0 +1,95 @@
+.card{
+  display: flex;
+  height: 50vh;
+  width: 70vw;
+  @include responsive(desktop, small){
+    display: flex;
+    height: 80vh;
+    flex-direction: column-reverse;
+  }
+  background-color: $dark_desaturated_blue;
+  @include centerElement(50%, 50%);
+
+  border-radius: 1rem;
+  &__text{
+    width: 50%;
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+
+
+    @include responsive(desktop, small){
+      width: 100%;
+      padding: 4rem;
+      text-align: center;
+    }
+    @include responsive(desktop, medium){
+      width: 100%;
+      padding: 4rem;
+      text-align: center;
+    }
+
+    &-title{
+      color: $white;
+      font-family: "Inter", sans-serif;
+      font-weight: 700;
+      font-size: 3.5rem;
+
+      span{
+        color: $soft_violet_accent;
+      }
+    }
+
+    &-description{
+      margin-top: 2.5rem;
+      color: $white_transparent_75;
+      font-family: 'Lexend Deca', sans-serif;
+      font-size: 2rem;
+      flex: 1;
+    }
+
+    &-companies{
+      display: grid;
+      width: 90%;
+      grid-template-columns: repeat(3, 1fr);
+
+      @include responsive(desktop, small){
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+        margin-top: 6rem;
+        grid-row-gap: 4rem;
+      }
+
+      & p{
+        color: $white;
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 2.8rem;
+
+      }
+
+      & span{
+        color: $white_transparent_60;
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 1.5rem;
+      }
+    }
+  }
+  &__image{
+    width: 50%;
+    background: linear-gradient(rgba($soft_violet_accent, 0.6),rgba($soft_violet_accent, 0.6)), url("/images/image-header-desktop.jpg") no-repeat;
+    background-size: cover;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    filter: contrast(1.3);
+
+    @include responsive(desktop, small){
+
+      height: 50%;
+      width: 100%;
+      border-top-right-radius: 1rem;
+      border-top-left-radius: 1rem;
+      border-bottom-right-radius: 0;
+    }
+  }
+}
